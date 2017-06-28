@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="index.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- multistep form -->
+    <form id="msform">
+        <!-- progressbar -->
+        <ul id="progressbar">
+            <li class="active">Definition du projet </li>
+            <li> Coordonnées de l'entreprise </li>
+        </ul>
+        <!-- fieldsets -->
+        <fieldset>
+            <fieldset>
+                <h2 class="fs-title" class="one">Definition du projet </h2>
+                <h3 class="fs-subtitle" class="one">Renseignez vos besoins </h3>
+                <p>
+                    Les fonctionnalités :<br />
+                    <input type="checkbox" name="frites" id="frites" /> <label for="frites">Impression</label>
+                    <input type="checkbox" name="steak" id="steak" /> <label for="steak"> Numérisation </label><br />
+                    <input type="checkbox" name="epinards" id="epinards" /> <label for="epinards"> Copie </label>
+                    <input type="checkbox" name="huitres" id="huitres" /> <label for="huitres"> Fax</label>
+                </p>
+                <p>
+                    Avez vous besoin de la couleur noir et blanc ?<br />
+                    <input type="radio" name="age" value="moins15" id="moins15" /> <label for="moins15"> Couleur </label> <br />
+                    <input type="radio" name="age" value="medium15-25" id="medium15-25" /> <label for="medium15-25">Noir et blanc</label><br />
+                    <input type="radio" name="age" value="medium25-40" id="medium25-40" /> <label for="medium25-40">Les deux</label><br />
+                </p>
+                <p>
+                    Sur quel type de format avez - vous besoin d'imprimer' :<br />
+                    <input type="checkbox" name="frites" id="frites" /> <label for="frites">A4</label><br />
+                    <input type="checkbox" name="steak" id="steak" /> <label for="steak"> A3 </label><br />
+                    <input type="checkbox" name="epinards" id="epinards" /> <label for="epinards"> Livret</label><br />
+                </p>
+                <p>
+                    <label for="pays">Quelle est l'urgence du projet ? </label><br />
+                    <select name="pays" id="pays">
+           <option value="Urgent">Urgent</option>
+           <option value="Entre 3 et 6 mois ">Entre 3 et 6 mois </option>
+           <option value="Plus de 6 mois">Plus de 6 mois</option>
+       </select>
+                </p>
+                <input type="text" name="email" placeholder="Email" />
+                <input type="password" name="pass" placeholder="Password" />
+                <input type="password" name="cpass" placeholder="Confirm Password" />
+                <input type="password" name="cpass" placeholder="Confirm Password" />
+                <input type="button" name="next" class="next action-button" value="Next" />
+            </fieldset>
+        </fieldset>
+        <fieldset>
+            <h2 class="fs-title">Social Profiles</h2>
+            <h3 class="fs-subtitle">Your presence on the social network</h3>
+            <input type="text" name="twitter" placeholder="Entreprise" />
+            <input type="text" name="facebook" placeholder="Nom" />
+            <input type="text" name="gplus" placeholder="Prenom" />
+            <input type="text" name="facebook" placeholder="Mail" />
+            <input type="text" name="facebook" placeholder="Téléphone" />
+            <textarea name="address" placeholder="Commentaire"></textarea>
+
+
+            <input type="button" name="previous" class="previous action-button" value="Previous" />
+            <input type="button" name="next" class="next action-button" value="Next" />
+        </fieldset>
+        <fieldset>
+            <h2 class="fs-title">Personal Details</h2>
+            <h3 class="fs-subtitle">We will never sell it</h3>
+            <input type="text" name="fname" placeholder="First Name" />
+            <input type="text" name="lname" placeholder="Last Name" />
+            <input type="text" name="phone" placeholder="Phone" />
+            <textarea name="address" placeholder="Address"></textarea>
+            <input type="button" name="previous" class="previous action-button" value="Previous" />
+            <input type="submit" name="submit" class="submit action-button" value="Submit" />
+        </fieldset>
+    </form>
+</body>
+
+</html>
